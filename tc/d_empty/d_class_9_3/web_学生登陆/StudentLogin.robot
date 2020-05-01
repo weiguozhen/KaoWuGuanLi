@@ -10,4 +10,4 @@ tc005081
     should be true  $c_s_m_i == ['张杰', '松勤学院00914', '0', '0']
     ${c_s_w_q}  check_stu_WrongQuestion_info
     should be true  $c_s_w_q == '您尚未有错题入库哦'
-    [Teardown]  delete_student   ${ret1['id']
+    [Teardown]  delete_student   ${ret1['id']}
