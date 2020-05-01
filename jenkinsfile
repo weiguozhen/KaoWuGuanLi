@@ -7,7 +7,7 @@ node() {
         // 注释
         echo 'test'
 	//sh 'echo case001 >> suite.txt'
-        sh label: '', script: 'robot -P ../考务管理系统/ -t tc005081 -l debug  ../考务管理系统/tc'
+        sh label: '', script: 'robot -P . -t tc005081 tc'
     }
     stage('部署') {
         // 注释
