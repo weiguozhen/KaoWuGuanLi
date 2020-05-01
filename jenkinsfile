@@ -1,6 +1,7 @@
 node() {
     stage('构建') {
         //  注释
+	checkout scm
         echo 'build'
     }
     stage('测试') {
