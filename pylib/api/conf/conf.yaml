@@ -1,0 +1,15 @@
+--- 
+server1: 
+  classUrl: "http://ci.ytesting.com/api/3school/school_classes"
+  g_grade_7_id: website
+  g_subject_math_id: 1
+  g_subject_science_id: 5
+  teacherUrl: "http://ci.ytesting.com/api/3school/teachers"
+  studentUrl: 'http://ci.ytesting.com/api/3school/students'
+  teacherLoginUrl: 'http://ci.ytesting.com/teacher/login/login.html'
+  vcode: 00000009190804457882
+server2: 
+  classUrl: "http://ci.ytesting.com"
+  teacherUrl: "http://ci.ytesting.com"
+  vcode: 999
+test_env: server1

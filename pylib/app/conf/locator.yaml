@@ -1,0 +1,60 @@
+LoginPage:
+  inputtext:
+    - 'class name'
+    - 'android.widget.EditText'
+  login:
+    - 'xpath'
+    - '//*[android.widget.TextView][2]'
+  errorinfo:
+    - 'id'
+    - 'android:id/message'
+
+ClassPage:
+  classpage: 'tabnav-classes'
+  flush: 'refresh-class-list'
+  noclass: 'no-class-warning'
+  info:
+    - 'xpath'
+    - '//*[@content-desc="detail-class-list"]//android.widget.TextView'
+
+  add: 'IconAddClass'
+  classname: 'new UiSelector().text("班级名称").className("android.widget.EditText")'
+  classid: 'new UiSelector().text("年级ID").className("android.widget.EditText")'
+  count: 'new UiSelector().text("人数上限").className("android.widget.EditText")'
+  commit: 'new UiSelector().text("添加").className("android.widget.TextView")'
+  checkinfo:
+    - 'id'
+    - 'android:id/message'
+  ok:
+    - 'id'
+    - 'android:id/button1'
+  classlist: 'detail-class-list'
+  classinfo: 'android.widget.TextView'
+  toworthree: './/android.widget.TextView[position()=2 or position()=3]'
+
+TeacherPage:
+  teacherpage: 'tabnav-teachers'
+  refresh: 'refresh-teacher-list'
+  noteacher: 'no-teacher-warning'
+  info:
+    - 'xpath'
+    - '//*[@content-desc="detail-teacher-list"]//android.widget.TextView'
+  add: 'IconAddTeacher'
+  realname: 'new UiSelector().text("老师真实姓名").className("android.widget.EditText")'
+  username: 'new UiSelector().text("登录名").className("android.widget.EditText")'
+  subjectid: 'new UiSelector().text("学科ID号").className("android.widget.EditText")'
+  classlist: 'new UiSelector().textContains("班级ID号").className("android.widget.EditText")'
+  phonenumber: 'new UiSelector().text("电话号码").className("android.widget.EditText")'
+  email: 'new UiSelector().text("邮箱").className("android.widget.EditText")'
+  idcardnumber: 'new UiSelector().text("身份证号").className("android.widget.EditText")'
+  submit: 'new UiSelector().text("添加").className("android.widget.TextView")'
+  okinfo:
+    - 'id'
+    - 'android:id/message'
+  ok:
+    - 'id'
+    - 'android:id/button1'
+  goback: 'new UiSelector().text("返回").className("android.widget.TextView")'
+  teacherinfo:
+    - 'xpath'
+    - '//*[@content-desc="detail-teacher-list"]//android.widget.TextView'

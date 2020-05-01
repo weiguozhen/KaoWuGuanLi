@@ -1,0 +1,10 @@
+---
+blacklist:
+  #弹框
+  except:
+    -
+      - id
+      - "//*[@resource-id=\"com.ibox.calculators:id/digit3\"]"
+    -
+      - xpath
+      - "//*[@resource-id=\"com.ibox.calculators:id/digit3\"]"

@@ -1,0 +1,8 @@
+---
+BlackList:
+  MainPagePopUp:
+    - "css selector"
+    - '//*[@resource-id=\"com.ibox.calculators:id/digit3\"]'
+  LoginPopUp:
+    - "css selector"
+    - '//*[@resource-id=\"com.ibox.calculators:id/digit3\"]'

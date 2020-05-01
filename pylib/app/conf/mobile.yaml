@@ -1,0 +1,24 @@
+---
+server: server1
+server1:
+  appActivity: .MainActivity
+  appPackage: com.yjyxapp
+  automationName: UiAutomator1
+  deviceName: DU2SSE148V056978
+  platformName: android
+  plathformVersion: "4"
+  resetKeyboard: True
+  unicodeKeyboard: True
+  noReset: True
+server2:
+  appActivity: .MainActivity
+  appPackage: com.yjyxapp
+  automationName: UiAutomator2
+  deviceName: DU2SSE148V056978
+  platformName: android
+  plathformVersion: "8"
+  resetKeyboard: true
+  unicodeKeyboard: true
+wait: 10
+monitor: "http://localhost:4723/wd/hub"
+vcode: 00000009190804457882
