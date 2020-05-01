@@ -1,4 +1,4 @@
-node() {
+node('ubuntu') {
     stage('构建') {
         //  注释
         echo 'build'
@@ -6,7 +6,8 @@ node() {
     stage('测试') {
         // 注释
         echo 'test'
-        sh label: '', script: 'robot -P ../考务管理系统/ -t tc005081 -l debug  ../考务管理系统/tc'
+	sh 'echo case001 >> suite.txt'
+        //sh label: '', script: 'robot -P ../考务管理系统/ -t tc005081 -l debug  ../考务管理系统/tc'
     }
     stage('部署') {
         // 注释
@@ -15,6 +16,6 @@ node() {
     stage('验收') {
         // 注释
         echo 'deploy'
-        emailext attachmentsPattern: '*.html', body: 'test', replyTo: 'wgz18516820311@163.com', subject: 'test', to: '1272235678@qq.com'
+        //emailext attachmentsPattern: '*.html', body: 'test', replyTo: 'wgz18516820311@163.com', subject: 'test', to: '1272235678@qq.com'
     }
 }
