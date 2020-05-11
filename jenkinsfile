@@ -8,7 +8,7 @@ node() {
         // 注释
         echo 'test'
 	//sh 'echo case001 >> suite.txt'
-        sh label: '', script: 'robot -P . -t tc005081 tc'
+        sh label: '', script: 'vim ~/.bash_profile && robot -P . -t tc005081 tc'
     }
     stage('部署') {
         // 注释
